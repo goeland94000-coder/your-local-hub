@@ -91,7 +91,7 @@ export const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden py-4 animate-fade-in">
+          <div className="lg:hidden py-4 bg-white dark:bg-card rounded-lg shadow-lg mt-2 animate-fade-in">
             <div className="flex flex-col space-y-2">
               {navigation.map((item) => (
                 <Link

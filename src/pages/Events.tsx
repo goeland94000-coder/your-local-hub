@@ -34,7 +34,7 @@ const regularEvents = [
   {
     icon: Tv,
     title: "Retransmissions sportives",
-    description: "Tous les grands matchs diffusés en direct",
+    description: "Tous les grands matchs diffusés en direct sur nos écrans géants",
     schedule: "Selon calendrier sportif",
   },
   {
@@ -42,6 +42,18 @@ const regularEvents = [
     title: "Happy Hour",
     description: "Tarifs préférentiels sur une sélection de boissons",
     schedule: "Lundi au vendredi, 17h-19h",
+  },
+  {
+    icon: Calendar,
+    title: "Soirée Belote",
+    description: "Tournoi amical tous les premiers jeudis du mois",
+    schedule: "1er jeudi du mois, 19h30",
+  },
+  {
+    icon: Clock,
+    title: "Tiercé du dimanche",
+    description: "Suivez les courses hippiques en direct avec nos passionnés",
+    schedule: "Tous les dimanches, 14h-18h",
   },
 ];
 
@@ -125,7 +137,7 @@ const Events = () => {
             <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
               Animations régulières
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {regularEvents.map((event, index) => (
                 <Card
                   key={event.title}

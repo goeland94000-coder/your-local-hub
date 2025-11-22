@@ -18,7 +18,7 @@ export const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl mx-auto text-center">
           <div className="space-y-6 animate-fade-in">
             {/* Badge */}
             <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
@@ -37,12 +37,12 @@ export const Hero = () => {
             </h1>
 
             {/* Description */}
-            <p className="text-xl text-muted-foreground max-w-2xl">
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Un lieu chaleureux où se retrouver autour d'un café, d'un verre, d'un ticket à gratter ou d'un moment de convivialité.
             </p>
 
             {/* Features */}
-            <div className="flex flex-wrap gap-6 pt-4">
+            <div className="flex flex-wrap gap-6 pt-4 justify-center">
               <div className="flex items-center space-x-2 text-foreground/80">
                 <Coffee className="h-5 w-5 text-primary" />
                 <span className="font-medium">Café & Bar</span>
@@ -58,7 +58,7 @@ export const Hero = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-6">
+            <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center">
               <Button
                 asChild
                 size="lg"

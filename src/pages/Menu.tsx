@@ -126,13 +126,55 @@ const Menu = () => {
             ))}
           </div>
 
-          {/* Additional Info */}
-          <div className="max-w-4xl mx-auto mt-12 text-center">
-            <Card className="p-8 bg-secondary">
+          {/* Formules spéciales */}
+          <div className="max-w-5xl mx-auto mt-12 space-y-6">
+            <h2 className="text-4xl font-bold text-foreground text-center mb-8">Nos Formules</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Card className="p-8 bg-gradient-to-br from-primary/5 to-primary/10 border-2 border-primary/20">
+                <h3 className="text-2xl font-bold text-foreground mb-4 text-center">Formule Petit-Déjeuner</h3>
+                <p className="text-center text-sm text-muted-foreground mb-4">Disponible de 7h à 11h</p>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center py-2 border-b border-border">
+                    <span className="text-foreground">Café + Croissant</span>
+                    <span className="text-primary font-bold">2,50 €</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-border">
+                    <span className="text-foreground">Café + Tartine beurre confiture</span>
+                    <span className="text-primary font-bold">3,00 €</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2">
+                    <span className="text-foreground">Jus d'orange + Viennoiserie</span>
+                    <span className="text-primary font-bold">4,00 €</span>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-8 bg-gradient-to-br from-accent/5 to-accent/10 border-2 border-accent/20">
+                <h3 className="text-2xl font-bold text-foreground mb-4 text-center">Happy Hour</h3>
+                <p className="text-center text-sm text-muted-foreground mb-4">Tous les jours de 17h à 19h</p>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center py-2 border-b border-border">
+                    <span className="text-foreground">Bière pression 50cl</span>
+                    <span className="text-accent font-bold">4,00 € <span className="line-through text-muted-foreground text-sm">5,00 €</span></span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-border">
+                    <span className="text-foreground">Cocktails maison</span>
+                    <span className="text-accent font-bold">6,00 € <span className="line-through text-muted-foreground text-sm">8,00 €</span></span>
+                  </div>
+                  <div className="flex justify-between items-center py-2">
+                    <span className="text-foreground">Verre de vin</span>
+                    <span className="text-accent font-bold">3,50 € <span className="line-through text-muted-foreground text-sm">4,50 €</span></span>
+                  </div>
+                </div>
+              </Card>
+            </div>
+
+            <Card className="p-8 bg-secondary text-center">
               <p className="text-lg text-muted-foreground">
-                <span className="font-semibold text-foreground">Formules disponibles :</span><br />
-                Profitez de nos formules petit-déjeuner et happy hour.<br />
-                N'hésitez pas à demander conseil à notre équipe !
+                <span className="font-semibold text-foreground">Informations :</span><br />
+                Tous nos prix sont affichés TTC. Les formules ne sont pas cumulables avec d'autres promotions.<br />
+                N'hésitez pas à demander conseil à notre équipe pour découvrir nos suggestions du jour !
               </p>
             </Card>
           </div>

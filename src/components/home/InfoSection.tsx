@@ -4,9 +4,9 @@ import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 
 const schedules = [
-  { day: "Lundi - Vendredi", hours: "7h00 - 22h00" },
-  { day: "Samedi", hours: "8h00 - 23h00" },
-  { day: "Dimanche", hours: "9h00 - 21h00" },
+	  { day: "Lundi - Vendredi", hours: "7h00 - 20h00" },
+	  { day: "Samedi", hours: "8h00 - 20h00" },
+	  { day: "Dimanche", hours: "Fermé" },
 ];
 
 export const InfoSection = () => {
@@ -48,8 +48,9 @@ export const InfoSection = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Adresse</h4>
                     <p className="text-muted-foreground">
-                      123 Rue de la Convivialité<br />
-                      75000 Paris, France
+                      Av. du Général Pierre Billotte<br />
+                      94000 Créteil, France<br />
+                      <span className="text-sm italic">Métro : Créteil - Ligne 8</span>
                     </p>
                   </div>
                 </div>
@@ -59,10 +60,10 @@ export const InfoSection = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Téléphone</h4>
                     <a
-                      href="tel:+33123456789"
+                      href="tel:+33601392499"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      01 23 45 67 89
+                      06 01 39 24 99
                     </a>
                   </div>
                 </div>
@@ -97,7 +98,7 @@ export const InfoSection = () => {
             </h2>
             <Card className="overflow-hidden h-[600px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.292292615674896!3d48.85837007928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fec70fb1d8f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sfr!4v1234567890123!5m2!1sen!2sfr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.700597987884!2d2.454375976780366!3d48.79979987130099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60d3733221379%3A0x8892454522883490!2sBar%20Les%20Goelands%20Pmu!5e0!3m2!1sfr!2sfr!4v1700650000000!5m2!1sfr!2sfr"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

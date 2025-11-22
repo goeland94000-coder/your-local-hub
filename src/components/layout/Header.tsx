@@ -47,7 +47,7 @@ export const Header = () => {
           >
             <Coffee className="h-8 w-8 text-primary transition-transform group-hover:scale-110" />
             <span className="text-xl font-bold text-foreground">
-              Bar Café PMU
+	              Le Goéland - Bar Café PMU
             </span>
           </Link>
 

@@ -4,9 +4,9 @@ import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 
 const schedules = [
-	  { day: "Lundi - Vendredi", hours: "7h00 - 20h00" },
-	  { day: "Samedi", hours: "8h00 - 20h00" },
-	  { day: "Dimanche", hours: "Fermé" },
+	  { day: "Lundi - Vendredi", hours: "7h30 - 23h00" },
+	  { day: "Samedi", hours: "10h00 - 20h00" },
+	  { day: "Dimanche", hours: "10h00 - 23h00" },
 ];
 
 export const InfoSection = () => {
@@ -50,7 +50,7 @@ export const InfoSection = () => {
                     <p className="text-muted-foreground">
                       Av. du Général Pierre Billotte<br />
                       94000 Créteil, France<br />
-                      <span className="text-sm italic">Métro : Créteil - Ligne 8</span>
+                      <span className="text-sm italic">Métro : Créteil - Préfecture (Ligne 8)</span>
                     </p>
                   </div>
                 </div>

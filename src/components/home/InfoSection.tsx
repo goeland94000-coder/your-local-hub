@@ -73,10 +73,10 @@ export const InfoSection = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Email</h4>
                     <a
-                      href="mailto:contact@barcafe.fr"
+                      href="mailto:goeland94000@gmail.com"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      contact@barcafe.fr
+                      goeland94000@gmail.com
                     </a>
                   </div>
                 </div>

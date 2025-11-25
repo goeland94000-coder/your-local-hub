@@ -11,7 +11,7 @@ export const Footer = () => {
             <div className="flex items-center space-x-2">
               <Coffee className="h-8 w-8 text-primary" />
               <span className="text-xl font-bold text-foreground">
-                Bar Café PMU
+                Le Goéland
               </span>
             </div>
             <p className="text-sm text-muted-foreground">
@@ -93,15 +93,15 @@ export const Footer = () => {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li className="flex justify-between">
                 <span>Lundi - Vendredi</span>
-                <span className="font-medium">7h - 22h</span>
+                <span className="font-medium">7h30 - 23h</span>
               </li>
               <li className="flex justify-between">
                 <span>Samedi</span>
-                <span className="font-medium">8h - 23h</span>
+                <span className="font-medium">10h - 20h</span>
               </li>
               <li className="flex justify-between">
                 <span>Dimanche</span>
-                <span className="font-medium">9h - 21h</span>
+                <span className="font-medium">10h - 23h</span>
               </li>
             </ul>
           </div>
@@ -115,26 +115,26 @@ export const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-muted-foreground">
-                  123 Rue de la Convivialité<br />
-                  75000 Paris, France
+                  Av. du Général Pierre Billotte<br />
+                  94000 Créteil, France
                 </span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 text-primary flex-shrink-0" />
                 <a
-                  href="tel:+33123456789"
+                  href="tel:+33601392499"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  01 23 45 67 89
+                  06 01 39 24 99
                 </a>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-primary flex-shrink-0" />
                 <a
-                  href="mailto:contact@barcafe.fr"
+                  href="mailto:goeland94000@gmail.com"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  contact@barcafe.fr
+                  goeland94000@gmail.com
                 </a>
               </li>
             </ul>
@@ -144,7 +144,7 @@ export const Footer = () => {
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Bar Café PMU. Tous droits réservés.
+              © {new Date().getFullYear()} Le Goéland. Tous droits réservés. Site officiel.
             </p>
             <div className="flex space-x-6">
               <Link

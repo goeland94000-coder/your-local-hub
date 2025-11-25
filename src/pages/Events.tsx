@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Clock, Users, Tv } from "lucide-react";
 import { Link } from "react-router-dom";
 import eventsSportsImage from "@/assets/events-sports.jpg";
+import { SEO } from "@/components/SEO";
 
 const events = [
   {
@@ -59,7 +60,12 @@ const regularEvents = [
 
 const Events = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <>
+      <SEO 
+        title="Événements"
+        description="Soirées quiz, matchs en direct, animations sportives et événements conviviaux au Goéland. Consultez notre calendrier."
+      />
+      <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-32 pb-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -183,6 +189,7 @@ const Events = () => {
       </main>
       <Footer />
     </div>
+    </>
   );
 };
 

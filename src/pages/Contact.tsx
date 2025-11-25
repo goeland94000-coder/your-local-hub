@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Clock, MapPin, Phone, Mail, MessageSquare } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 const schedules = [
   { day: "Lundi - Vendredi", hours: "7h30 - 23h00" },
@@ -15,7 +16,12 @@ const schedules = [
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <>
+      <SEO 
+        title="Contact"
+        description="Contactez Le Goéland : adresse, téléphone, email, horaires. Av. du Général Pierre Billotte, 94000 Créteil. 06 01 39 24 99"
+      />
+      <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-32 pb-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -202,6 +208,7 @@ const Contact = () => {
       </main>
       <Footer />
     </div>
+    </>
   );
 };
 

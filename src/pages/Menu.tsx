@@ -2,6 +2,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Card } from "@/components/ui/card";
 import menuSnacksImage from "@/assets/menu-snacks.jpg";
+import { SEO, getRestaurantMenuSchema } from "@/components/SEO";
 
 const menuCategories = [
   {
@@ -64,7 +65,13 @@ const menuCategories = [
 
 const Menu = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <>
+      <SEO 
+        title="Notre Carte - Menu du bar et café"
+        description="Découvrez notre carte : boissons chaudes, froides, alcools et snacks. Café de qualité, bières, vins et petite restauration."
+        structuredData={getRestaurantMenuSchema()}
+      />
+      <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-32 pb-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -182,6 +189,7 @@ const Menu = () => {
       </main>
       <Footer />
     </div>
+    </>
   );
 };
 

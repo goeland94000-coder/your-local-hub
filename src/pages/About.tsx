@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Card } from "@/components/ui/card";
 import { Coffee, Heart, Users, Award } from "lucide-react";
 import aboutTeamImage from "@/assets/about-team.jpg";
+import { SEO } from "@/components/SEO";
 
 const values = [
   {
@@ -29,7 +30,12 @@ const values = [
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <>
+      <SEO 
+        title="À propos"
+        description="Découvrez l'histoire du Goéland, votre bar café PMU de quartier à Créteil. Convivialité, partage et ambiance chaleureuse."
+      />
+      <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-32 pb-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -119,6 +125,7 @@ const About = () => {
       </main>
       <Footer />
     </div>
+    </>
   );
 };
 

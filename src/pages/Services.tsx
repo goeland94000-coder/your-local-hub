@@ -1,10 +1,16 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Services as ServicesComponent } from "@/components/home/Services";
+import { SEO } from "@/components/SEO";
 
 const Services = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <>
+      <SEO 
+        title="Nos Services"
+        description="Bar & Café, PMU & Jeux, Espace de partage convivial. Découvrez tous nos services au Goéland."
+      />
+      <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 pb-12">
@@ -19,6 +25,7 @@ const Services = () => {
       </main>
       <Footer />
     </div>
+    </>
   );
 };
 

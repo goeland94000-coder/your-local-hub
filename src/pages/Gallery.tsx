@@ -8,6 +8,7 @@ import heroImage from "@/assets/hero-bar.jpg";
 import cafeImage from "@/assets/cafe-service.jpg";
 import pmuImage from "@/assets/pmu-service.jpg";
 import convivialiteImage from "@/assets/convivialite-service.jpg";
+import { SEO } from "@/components/SEO";
 import aboutTeamImage from "@/assets/about-team.jpg";
 
 const galleryImages = [
@@ -55,7 +56,12 @@ const galleryImages = [
 
 const Gallery = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <>
+      <SEO 
+        title="Galerie Photos"
+        description="Découvrez l'ambiance chaleureuse du Goéland en images : notre bar, l'espace PMU, le café et les moments de convivialité."
+      />
+      <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-32 pb-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -138,6 +144,7 @@ const Gallery = () => {
       </main>
       <Footer />
     </div>
+    </>
   );
 };
 

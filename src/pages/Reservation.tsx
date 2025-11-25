@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
+import { SEO } from "@/components/SEO";
 import {
   Select,
   SelectContent,
@@ -34,7 +35,12 @@ const benefits = [
 
 const Reservation = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <>
+      <SEO 
+        title="Réserver une table"
+        description="Réservez facilement votre table au Goéland. Convivialité garantie pour vos soirées, événements ou moments entre amis."
+      />
+      <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-32 pb-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -207,6 +213,7 @@ const Reservation = () => {
       </main>
       <Footer />
     </div>
+    </>
   );
 };
 
